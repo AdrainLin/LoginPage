@@ -75,7 +75,6 @@ function handleLoginBtnClick(e) {
     if(errorMessage){
         e.preventDefault();
         errorText.innerText = errorMessage;
-        console.log(errorText);
         errorText.classList.remove("shake-animate");
         setTimeout(()=>{
             errorText.classList.add("shake-animate");
