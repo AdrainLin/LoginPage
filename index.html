@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="zh-tw">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page</title>
+    <script src="https://kit.fontawesome.com/1687a22c64.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/LoginPage.css">
+
+</head>
+<body>
+    <div class="login-box">
+        <form action="">
+            <h2>Login</h2>
+            <div class="error-text"><span></span></div>
+            <!-- Email input -->
+            <div class="input-box">
+                <span class="icon">
+                    <i class="fa-solid fa-envelope"></i>
+                </span>
+                <input id="email" type="text" required autocomplete="off" title="email address">
+                <label for="email">Email</label>
+            </div>
+            
+            <!-- Password input -->
+            <div class="input-box">
+                <span class="icon">
+                    <i class="fa-solid fa-lock"></i>
+                </span>
+                <input id="password" type="password" required autocomplete="off" title="password">
+                <label for="password">Password</label>
+            </div>
+            <!-- remember me 、forgot -->
+            <div class="remember-forgot">
+                <label>
+                    <input type="checkbox" id="rem">
+                    <div class="fake">
+                        <div class="inner">
+                            <i class="fa-solid fa-check"></i>
+                        </div>
+                    </div>  
+                    <span>Remember me</span>
+                </label>
+                <a href="#">Forgot Password?</a>   
+            </div>
+            <button type="submit" id="login-btn">Login</button>
+            <!-- register-link -->
+            <div class="register-link">
+                <p>Don't have an accout&nbsp;?<a href="#">&nbsp;Register</a></p> 
+            </div>
+        </form>
+    </div>
+    <script src="./js/LoginPage.js"></script>
+</body>
+</html>
